@@ -19,8 +19,8 @@ public class UserController {
     UserService userService;
 
     @RequestMapping(value = "/findAll", method = {RequestMethod.GET})
-    public String findAll(){
-        List<User> list =  userService.findAll();
+    public String findAll() {
+        List<User> list = userService.findAll();
         System.out.println("ljs");
         return list.toString();
     }
